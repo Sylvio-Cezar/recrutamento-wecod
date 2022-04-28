@@ -1,0 +1,15 @@
+
+<table>
+  <tr>
+    <th class="title">Nome</th>
+    <th class="title">Sobrenome</th>
+    <th class="title">Email</th>
+    <th class="title">Telefone </th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <th>{{ user?.name?.first }}</th>
+    <th>{{ user?.name?.last }}</th>
+    <th>{{ user?.email }}</th>
+    <th>{{ user?.phone }}</th>
+  </tr>
+</table>

@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url(./assets/background.jpg);
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+td, th {
+  padding: .7em;
+  margin: 0;
+  text-align: center;
+}
+
+th{
+  color: darkblue;
+  background-color: cadetblue;
+}
+
+.title{
+  background-color: blue;
+  font-weight:bold;
+  color: white;
+}
+
+table{
+  width: 100%;
+  margin-bottom : .5em;
+  table-layout: fixed;
+  text-align: center;
+}
