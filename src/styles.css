@@ -8,6 +8,10 @@ h1 {
   color: aliceblue;
 }
 
+.main-title {
+  color: aliceblue;
+}
+
 td, th {
   padding: .7em;
   margin: 0;
@@ -30,4 +34,69 @@ table{
   margin-bottom : .5em;
   table-layout: fixed;
   text-align: center;
+}
+
+
+.container-fluid ul li a{
+  display: inline;
+  margin: 0em 2em;
+}
+
+.container-button {
+  width: 98vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-container-button {
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-button {
+  width: 300px;
+  height: 300px;
+}
+
+.user-box {
+  width: 300px;
+  height: 70px;
+}
+
+.list-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13;
+  margin: 10px 80px;
+  width:140px;
+  height:50px;
+  border-width:3px;
+  color:#fff;
+  border-color:#4e6096;
+  font-weight:bold;
+  border-top-left-radius:14px;
+  border-top-right-radius:14px;
+  border-bottom-left-radius:14px;
+  border-bottom-right-radius:14px;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  text-shadow: 0px 1px 0px #283966;
+  background:linear-gradient(rgb(120, 146, 194), #476e9e);
+}
+
+.list-button:hover {
+  background: linear-gradient(#476e9e, rgb(120, 146, 194));
+  cursor: pointer;
+}
+
+.text-button {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13;
+  text-align: center;
+  padding: 10px 20px;
 }

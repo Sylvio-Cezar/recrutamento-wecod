@@ -1,15 +1,23 @@
-
-<table>
-  <tr>
-    <th class="title">Nome</th>
-    <th class="title">Sobrenome</th>
-    <th class="title">Email</th>
-    <th class="title">Telefone </th>
-  </tr>
-  <tr *ngFor="let user of users">
-    <th>{{ user?.name?.first }}</th>
-    <th>{{ user?.name?.last }}</th>
-    <th>{{ user?.email }}</th>
-    <th>{{ user?.phone }}</th>
-  </tr>
-</table>
+<div class="user-container">
+  <div class="user-table">
+    <table>
+      <tr>
+        <th class="title">Nome</th>
+        <th class="title">Sobrenome</th>
+        <th class="title">Email</th>
+        <th class="title">Telefone </th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <th>{{ user?.name?.first }}</th>
+        <th>{{ user?.name?.last }}</th>
+        <th>{{ user?.email }}</th>
+        <th>{{ user?.phone }}</th>
+      </tr>
+    </table>
+  </div>
+  <div class="user-container-button">
+    <div class="user-box">
+      <button class="list-button" [routerLink]="['/']" routerLinkActive="router-link-active">Voltar</button>
+    </div>
+  </div>
+</div>

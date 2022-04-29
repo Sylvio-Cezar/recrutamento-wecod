@@ -7,11 +7,13 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserService } from './user.service';
 import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
 import { AppRoutingModule } from './app-routing.module';
+import { ListButtonComponent } from './components/list-button/list-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
+    ListButtonComponent,
   ],
   imports: [
     BrowserModule,

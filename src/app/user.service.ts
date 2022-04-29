@@ -10,6 +10,6 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   list() : Observable<any> {
-    return this.http.get("http://localhost:3100/results/");
+    return this.http.get("../assets/results.json");
   }
 }

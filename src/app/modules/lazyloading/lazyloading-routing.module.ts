@@ -1,3 +1,4 @@
+import { ListButtonComponent } from './../../components/list-button/list-button.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FooterComponent } from 'src/app/components/footer/footer.component';
@@ -8,17 +9,7 @@ import { HomelazyComponent } from 'src/app/components/homelazy/homelazy.componen
 const routes: Routes = [
   {
     path: '',
-    component: HomelazyComponent,
-    children: [
-      {
-        path: 'header',
-        component: HeaderComponent
-      },
-      {
-        path: 'footer',
-        component: FooterComponent
-      }
-    ]
+    component: ListButtonComponent,
   }
 ];
 
