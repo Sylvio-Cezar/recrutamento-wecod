@@ -1,6 +1,6 @@
 <div class="user-container">
   <div class="user-table">
-    <table>
+    <table class="table">
       <tr>
         <th class="title">Nome</th>
         <th class="title">Sobrenome</th>
@@ -8,16 +8,11 @@
         <th class="title">Telefone </th>
       </tr>
       <tr *ngFor="let user of users">
-        <th>{{ user?.name?.first }}</th>
-        <th>{{ user?.name?.last }}</th>
-        <th>{{ user?.email }}</th>
-        <th>{{ user?.phone }}</th>
+        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.name?.first }}</a></th>
+        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.name?.last }}</a></th>
+        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.email }}</a></th>
+        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.phone }}</a></th>
       </tr>
     </table>
-  </div>
-  <div class="user-container-button">
-    <div class="user-box">
-      <button class="list-button" [routerLink]="['/']" routerLinkActive="router-link-active">Voltar</button>
-    </div>
   </div>
 </div>
