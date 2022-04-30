@@ -36,6 +36,9 @@ table{
   text-align: center;
 }
 
+.container-fluid {
+  margin-left: 36em;
+}
 
 .container-fluid ul li a{
   display: inline;
