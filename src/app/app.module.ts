@@ -9,6 +9,7 @@ import { LazyloadingModule } from './modules/lazyloading/lazyloading.module';
 import { AppRoutingModule } from './app-routing.module';
 import { ListButtonComponent } from './components/list-button/list-button.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { HeaderFooterComponent } from './components/header-footer/header-footer.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     UserListComponent,
     ListButtonComponent,
     UserDetailComponent,
+    HeaderFooterComponent,
   ],
   imports: [
     BrowserModule,

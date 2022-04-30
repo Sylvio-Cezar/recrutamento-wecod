@@ -1,19 +1,6 @@
-<nav class="navbar navbar-light bg-faded" style="background-color: rgb(137, 189, 242); border-color: #000;">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item"> |
-        <a [routerLink]="['/']" routerLinkActive="router-link-active" class="nav-link">
-          Home
-        </a> |
-        <a [routerLink]="['/user-list']" routerLinkActive="router-link-active" class="nav-link">
-          Lista
-        </a> |
-      </li>
-    </ul>
-  </div>
-</nav>
+<app-header-footer></app-header-footer>
 
-<br>
+<br><br>
 <h1 class="main-title">Listagem de usuários cadastrados</h1>
 
 <router-outlet></router-outlet>
