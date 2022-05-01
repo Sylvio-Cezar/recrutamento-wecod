@@ -35,11 +35,11 @@ td, th {
 
 th{
   color: darkblue;
-  background-color: cadetblue;
+  background-color: #9fb4f2;
 }
 
 .title{
-  background-color: blue;
+  background-color: #315683;
   font-weight:bold;
   color: white;
 }
@@ -85,11 +85,18 @@ table{
 .box-button {
   width: 300px;
   height: 300px;
+  margin-top: 12em;
 }
 
 .user-box {
   width: 300px;
   height: 70px;
+}
+
+.card {
+  margin-top: 5em;
+  border: 1px solid red;
+  background-color: #9fb4f2;
 }
 
 .list-button {
@@ -111,7 +118,26 @@ table{
   background:linear-gradient(rgb(120, 146, 194), #476e9e);
 }
 
-.list-button:hover {
+.detail-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13;
+  margin: 0px 95px;
+  width:140px;
+  height:50px;
+  border-width:3px;
+  color:#fff;
+  border-color:#4e6096;
+  font-weight:bold;
+  border-top-left-radius:14px;
+  border-top-right-radius:14px;
+  border-bottom-left-radius:14px;
+  border-bottom-right-radius:14px;
+  box-shadow: 0px 0px 0px 2px #9fb4f2;
+  text-shadow: 0px 1px 0px #283966;
+  background:linear-gradient(rgb(120, 146, 194), #476e9e);
+}
+
+.list-button:hover, .detail-button:hover {
   background: linear-gradient(#476e9e, rgb(120, 146, 194));
   cursor: pointer;
 }
@@ -122,10 +148,6 @@ table{
   font-size: 13;
   text-align: center;
   padding: 10px 20px;
-}
-
-.table-link {
-  cursor: pointer;
 }
 
 .px-2 {
