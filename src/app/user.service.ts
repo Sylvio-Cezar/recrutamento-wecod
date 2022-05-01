@@ -12,4 +12,17 @@ export class UserService {
   list() : Observable<any> {
     return this.http.get("../assets/results.json");
   }
+
+  async getUserByEmail(email: string) {
+    const result = await this.list().toPromise();
+    let user = null;
+    result.forEach (x => {
+      if (x.email == email) {
+        user = x;
+        return;
+      }
+    });
+    return user;
+  }
+
 }

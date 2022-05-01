@@ -8,10 +8,10 @@
         <th class="title">Telefone </th>
       </tr>
       <tr *ngFor="let user of users">
-        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.name?.first }}</a></th>
-        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.name?.last }}</a></th>
-        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.email }}</a></th>
-        <th><a class="table-link" onclick="window.location.href = '/user-detail'">{{ user?.phone }}</a></th>
+        <th><a class="table-link" [routerLink]="['/user-detail', user.email]">{{ user?.name?.first }}</a></th>
+        <th><a class="table-link" [routerLink]="['/user-detail', user.email]">{{ user?.name?.last }}</a></th>
+        <th><a class="table-link" [routerLink]="['/user-detail', user.email]">{{ user?.email }}</a></th>
+        <th><a class="table-link" [routerLink]="['/user-detail', user.email]">{{ user?.phone }}</a></th>
       </tr>
     </table>
     <br><br>

@@ -51,6 +51,11 @@ table{
   text-align: center;
 }
 
+.table-link {
+  text-decoration: none;
+  color: #315683;
+}
+
 .container-fluid {
   margin-left: 36em;
 }

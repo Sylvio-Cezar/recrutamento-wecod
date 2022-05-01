@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: '', component: AppComponent},
   { path: 'lazy', loadChildren: () => import('./modules/lazyloading/lazyloading.module').then(mod => mod.LazyloadingModule) },
   { path: 'user-list', component: UserListComponent },
-  { path: 'user-detail', component: UserDetailComponent}
+  { path: 'user-detail/:email', component: UserDetailComponent}
 ];
 
 @NgModule({
